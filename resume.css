@@ -93,17 +93,23 @@ html > body {
   }
 }
 @media(max-width: 625px) {
-  .tabs .container {
-    display: inline-block;
-  }
   #tab-titles {
     display: none;
   }
   .tab-content {
-    height: 87vh;
+    height: 80vh;
   }
   .logo-div {
     padding-left: 0px;
+  }
+  .tabs #burger {
+    display: flex;
+  }
+  .tab-pane h5 {
+    font-size: 15px;
+  }
+  .tab-pane {
+    margin: 0px;
   }
 }
 
@@ -159,31 +165,183 @@ a .avatar:hover {
   box-shadow: 2px 2px 2px rgb(130, 130, 130);
 }
 
+/*BURGER MENUUUUUUU*/
 
-/*Burger menu:*/
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: hidden;
+  }
+}
+@keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: hidden;
+  }
+}
+* {
+  box-sizing: border-box;
+}
 
-.container {
-  display: none;
+.b-nav {
+  position: absolute;
+  z-index: 11;
+  margin-left: 80px;
+}
+.b-nav:not(.open) {
+  visibility: hidden;
+}
+.b-nav li {
+  color: #444444;
+  list-style-type: none;
+  padding: 0px;
+  text-align: left;
+  -webkit-transform: translateX(-250px);
+          transform: translateX(-250px);
+}
+.b-nav li:not(.open) {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: slideOutLeft;
+          animation-name: slideOutLeft;
+}
+
+.b-nav.open {
+  visibility: visible;
+}
+.b-nav.open li {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: slideInLeft;
+          animation-name: slideInLeft;
+}
+
+.b-link {
+  background: transparent;
+  border-left: rgba(68, 68, 68, 0) solid 2px;
+  color: #444444;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  margin-left: 30px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  width: auto;
+}
+.b-link:hover, .b-link--active {
+  border-left: #444444 solid 2px;
+  padding-left: 30px;
+}
+
+.b-menu {
+  background: white;
+  border: white solid 2px;
+  border-radius: 50%;
   cursor: pointer;
+  display: inline-block;
+  height: 60px;
+  padding-left: 15.5px;
+  padding-top: 17.5px;
+  transition: all 0.4s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 60px;
+  z-index: 12;
+}
+.b-menu:hover {
+  border: #444444 solid 2px;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
+.b-bun {
+  background: #444444;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.b-bun--top {
+  height: 2px;
+  top: 0;
+  width: 25px;
+}
+.b-bun--mid {
+  height: 2px;
+  top: 8px;
+  width: 25px;
+}
+.b-bun--bottom {
+  height: 2px;
+  top: 16px;
+  width: 25px;
 }
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+.b-container {
+  height: 60px;
+  margin: 20px;
+}
+.b-container:hover:not(.open) .bun-top,
+.b-container:hover:not(.open) .bun-mid,
+.b-container:hover:not(.open) .bun-bottom {
+  background: white;
+}
+.b-container.open .b-main {
+  border: #444444 solid 2px;
+}
+.b-container.open .b-bun--top {
+  background: #444444;
+  top: 9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.b-container.open .b-bun--mid {
+  opacity: 0;
+}
+.b-container.open .b-bun--bottom {
+  background: #444444;
+  top: 5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.b-container.open .b-brand {
+  color: #444444;
 }
 
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+#burger {
+  display: none;
 }
-
