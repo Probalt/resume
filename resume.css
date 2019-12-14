@@ -13,6 +13,7 @@ html > body {
 .tab-content {
   height: 87vh;
   overflow-y: scroll;
+  margin-top: 10px;
 }
 
 .tabs {
@@ -22,6 +23,10 @@ html > body {
 
 .personal-info, .job, .languages {
   width: 80%;
+}
+
+.tab-pane {
+  margin: 50px 50px 0px 50px;
 }
 
 @media(max-width: 1360px) {
@@ -97,7 +102,8 @@ html > body {
     display: none;
   }
   .tab-content {
-    height: 80vh;
+    height: 75vh;
+    margin-top: 50px;
   }
   .logo-div {
     padding-left: 0px;
@@ -109,8 +115,15 @@ html > body {
     font-size: 15px;
   }
   .tab-pane {
-    margin: 0px;
+    margin: 0px 10px 0px 10px;
   }
+  .tab-pane .experience {
+    padding: 15px 0px 0px 0px;
+  }
+}
+
+.experience {
+  padding: 15px;
 }
 
 .info .avatar {
