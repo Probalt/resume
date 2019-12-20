@@ -145,6 +145,23 @@ html > body {
   border: 1px solid rgb(50, 50, 50);
 }
 
+#skills .avatar {
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+#skills img {
+  max-width: 80px;
+  max-height: 40px;
+  margin: 0px 10px 10px 10px;
+}
+
+.images img {
+  width: 40px,
+  height: 40px;
+}
+
 .tabs a {
   color: rgb(50, 50, 50);
   opacity: 0.4;
