@@ -195,6 +195,25 @@ a .avatar:hover {
   box-shadow: 2px 2px 2px rgb(130, 130, 130);
 }
 
+.project-card {
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+}
+
+.tabs #projects .project-card {
+  box-shadow: 5px 5px 3px rgb(180, 180, 180);
+  border-radius: 4px;
+}
+
+.tabs #projects .project-card:hover {
+  box-shadow: 5px 5px 3px rgb(130, 130, 130);
+}
+
+.tabs #projects a {
+  opacity: 1;
+}
+
 /*BURGER MENUUUUUUU*/
 
 @-webkit-keyframes slideInLeft {
@@ -375,3 +394,4 @@ a .avatar:hover {
 #burger {
   display: none;
 }
+
