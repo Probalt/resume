@@ -395,3 +395,26 @@ a .avatar:hover {
   display: none;
 }
 
+.message-btn {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bolder;
+  border: solid 1px;
+  background-color: transparent;
+}
+
+.message-btn:hover {
+  background-color: white;
+}
+
+#download {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  color: white;
+}
+
+#download:hover {
+  color: black;
+}
