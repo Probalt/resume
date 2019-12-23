@@ -120,6 +120,9 @@ html > body {
   .tab-pane .experience {
     padding: 15px 0px 0px 0px;
   }
+  .tabs .c-container {
+    display: block;
+  }
 }
 
 .experience {
@@ -149,6 +152,7 @@ html > body {
   width: 40px;
   height: 40px;
   border: none;
+  position: cover;
 }
 
 #skills img {
@@ -179,10 +183,8 @@ html > body {
 }
 
 .logo-div {
-  color: rgb(50, 50, 50);
   width: 100px;
   padding-left: 10px;
-
 }
 
 .experience {
@@ -396,25 +398,44 @@ a .avatar:hover {
 }
 
 .message-btn {
-  margin-top: 20px;
   padding: 10px;
   border-radius: 6px;
   font-weight: bolder;
-  border: solid 1px;
-  background-color: transparent;
+  color: white;
+  background-color: #315B96;
 }
 
 .message-btn:hover {
   background-color: white;
-}
-
-#download {
-  position: absolute;
-  top: 15px;
-  left: 30px;
-  color: white;
-}
-
-#download:hover {
   color: black;
+  border: solid 1px black;
 }
+
+.c-container {
+  margin: 20px;
+  display: none;
+}
+
+#contact {
+  background-color: rgb(250,250,250);
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 600px;
+  box-shadow: 5px 5px 3px rgb(180, 180, 180);
+}
+
+#contact a {
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bolder;
+  color: white;
+  background-color: rgb(130,130,130);
+  opacity: 1;
+}
+
+#contact a:hover {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+}
+
