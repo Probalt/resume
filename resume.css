@@ -10,6 +10,10 @@ html > body {
   height: 100vh;
 }
 
+.job {
+  text-align: justify;
+}
+
 .tab-content {
   height: 87vh;
   overflow-y: scroll;
@@ -21,9 +25,14 @@ html > body {
   height: 100vh;
 }
 
-.personal-info, .job, .languages {
-  width: 80%;
+.personal-info, .job, .code-languages, .languages {
+  width: 75%;
 }
+
+.info h2 {
+  font-size: 32px;
+}
+
 
 .tab-pane {
   margin: 50px 50px 0px 50px;
@@ -166,7 +175,7 @@ html > body {
   height: 40px;
 }
 
-.tabs a {
+#tab-titles a {
   color: rgb(50, 50, 50);
   opacity: 0.4;
 }
@@ -400,15 +409,15 @@ a .avatar:hover {
 .message-btn {
   padding: 10px;
   border-radius: 6px;
-  font-weight: bolder;
-  color: white;
-  background-color: #315B96;
+  background-color: transparent;
+  color: black;
+  border: solid 1px black;
 }
 
 .message-btn:hover {
-  background-color: white;
-  color: black;
-  border: solid 1px black;
+  font-weight: bolder;
+  color: white;
+  background-color: #315B96
 }
 
 .c-container {
@@ -427,15 +436,14 @@ a .avatar:hover {
 #contact a {
   padding: 10px;
   border-radius: 6px;
-  font-weight: bolder;
-  color: white;
-  background-color: rgb(130,130,130);
-  opacity: 1;
+  background-color: transparent;
+  color: black;
+  border: solid 1px black;
 }
 
 #contact a:hover {
-  background-color: white;
-  color: black;
-  border: solid 1px black;
+  font-weight: bolder;
+  color: white;
+  background-color: #315B96
 }
 
