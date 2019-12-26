@@ -146,7 +146,6 @@ html > body {
   .info #paper-plane {
     display: block;
   }
-
   .tab-content {
     height: 75vh;
     margin-top: 50px;
@@ -164,10 +163,6 @@ html > body {
   .tab-pane .experience {
     padding: 15px 0px 0px 0px;
   }*/
-}
-
-.experience {
-  padding: 15px;
 }
 
 .info .avatar {
@@ -227,6 +222,8 @@ html > body {
   background-color: white;
   box-shadow: 5px 5px 3px rgb(180, 180, 180);
   border-radius: 4px;
+  padding: 15px;
+  overflow: auto;
 }
 
 a .avatar:hover {
