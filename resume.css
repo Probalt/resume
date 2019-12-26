@@ -120,12 +120,8 @@ html > body {
   }
 }
 @media(max-width: 625px) {
-  .tabs {
-    display: none;
-  }
   .info {
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
     align-items: flex-start;
   }
   .info p, .info span {
@@ -135,8 +131,8 @@ html > body {
     font-size: 30px;
   }
   .info a .avatar {
-    width: 190px;
-    height: 190px;
+    width: 150px;
+    height: 150px;
   }
   .info a {
     margin: 10px 0px 10px 0px;
