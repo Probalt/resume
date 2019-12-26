@@ -121,10 +121,10 @@ html > body {
 }
 @media(max-width: 625px) {
   .tabs {
-    width: 0%;
+    display: none;
   }
   .info {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     align-items: flex-start;
   }
