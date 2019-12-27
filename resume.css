@@ -5,7 +5,7 @@ html > body {
 
 .info {
   color: white;
-  background: linear-gradient(to bottom right, #315B96, rgb(50, 50, 50));
+  background: linear-gradient(to bottom right, rgb(50, 50, 50), #315B96);
   width: 25%;
   height: 100vh;
 }
@@ -102,6 +102,9 @@ html > body {
   }
 }
 @media(max-width: 893px) {
+  .info {
+    height: 100%;
+  }
   .info p, .info span {
     font-size: 13px;
   }
@@ -110,20 +113,23 @@ html > body {
     height: 150px;
     margin-bottom: 0px;
   }
-  .info {
-    min-width: 200px;
-  }
 }
 @media(max-width: 669px) {
   #tab-titles h5 {
     font-size: 16px;
   }
+  .info {
+    height: 100vh;
+  }
 }
 @media(max-width: 625px) {
   .info {
     height: 100%;
-    width: 100%;
+    width: 45%;
     align-items: flex-start;
+  }
+  .tabs {
+    width: 55%;
   }
   .info p, .info span {
     font-size: 18px;
@@ -148,8 +154,9 @@ html > body {
     display: block;
   }
   .tab-content {
-    height: 100vh;
-    margin-top: 50px;
+    height: 90vh;
+    width: 400px;
+    margin-top: 0px;
   }
 /*
   .logo-div {
