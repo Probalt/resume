@@ -122,6 +122,7 @@ html > body {
 @media(max-width: 625px) {
   .info {
     height: 100%;
+    width: 100%;
     align-items: flex-start;
   }
   .info p, .info span {
@@ -147,7 +148,7 @@ html > body {
     display: block;
   }
   .tab-content {
-    height: 75vh;
+    height: 100vh;
     margin-top: 50px;
   }
 /*
@@ -223,7 +224,7 @@ html > body {
   box-shadow: 5px 5px 3px rgb(180, 180, 180);
   border-radius: 4px;
   padding: 15px;
-  overflow: auto;
+  min-width: 100%;
 }
 
 a .avatar:hover {
