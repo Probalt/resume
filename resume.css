@@ -34,7 +34,6 @@ html > body {
   font-size: 28px;
 }
 
-
 .tab-pane {
   margin: 50px 10px 0px 10px;
 }
@@ -161,7 +160,7 @@ a .avatar:hover {
     display: flex;
   }
   .tab-content {
-    height: 80vh;
+    height: 72vh;
     width: 400px;
     margin-top: 0px;
   }
@@ -175,11 +174,19 @@ a .avatar:hover {
     display: none;
   }
 }
+@media (max-width: 712px) {
+  .tab-content {
+    height: 80vh;
+  }
+}
+@media (max-width: 629px) {
+  .tab-content {
+    height: 90vh;
+  }
+}
 @media (max-width: 565px) {
   .tab-content {
     height: 95vh;
-    width: 400px;
-    margin-top: 0px;
   }
   #burger {
     display: flex;
@@ -287,7 +294,7 @@ a .avatar:hover {
 .b-nav {
   position: absolute;
   z-index: 11;
-  margin: 20px 20px 20px 100px;
+  margin: 0px 0px 0px 100px;
 }
 .b-nav:not(.open) {
   visibility: hidden;
@@ -295,7 +302,7 @@ a .avatar:hover {
 .b-nav li {
   color: white;
   list-style-type: none;
-  padding: 10px;
+  padding: 5px;
   text-align: left;
   -webkit-transform: translateX(-250px);
           transform: translateX(-250px);
