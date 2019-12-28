@@ -160,16 +160,19 @@ a .avatar:hover {
   .top-info {
     display: flex;
   }
-  .info #burger {
-    display: flex;
-  }
-  .info #paper-plane {
-    display: block;
-  }
   .tab-content {
     height: 80vh;
     width: 400px;
     margin-top: 0px;
+  }
+  .tabs #burger {
+    display: flex;
+  }
+  #paper-plane {
+    display: block;
+  }
+  #tab-titles {
+    display: none;
   }
 }
 @media (max-width: 565px) {
@@ -177,6 +180,15 @@ a .avatar:hover {
     height: 95vh;
     width: 400px;
     margin-top: 0px;
+  }
+  #burger {
+    display: flex;
+  }
+  #paper-plane {
+    display: block;
+  }
+  #tab-titles {
+    display: none;
   }
 }
 
@@ -224,7 +236,7 @@ a .avatar:hover {
 
 /*BURGER MENUUUUUUU*/
 
-/*@-webkit-keyframes slideInLeft {
+@-webkit-keyframes slideInLeft {
   0% {
     -webkit-transform: translate3d(-250px, 0, 0);
             transform: translate3d(-250px, 0, 0);
@@ -311,7 +323,7 @@ a .avatar:hover {
 
 .b-link {
   background: transparent;
-  color: white;
+  color: #444444;
   font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -321,15 +333,15 @@ a .avatar:hover {
   width: auto;
 }
 .b-link:hover, .b-link--active {
-  border-left: white solid 2px;
+  border-left: #444444 solid 2px;
   padding-left: 30px;
   text-decoration: none;
-  color: white;
+  color: gray;
 }
 
 .b-menu {
   background: white;
-  border: white solid 2px;
+  border: gray solid 2px;
   border-radius: 50%;
   cursor: pointer;
   display: inline-block;
@@ -398,7 +410,7 @@ a .avatar:hover {
 }
 .b-container.open .b-brand {
   color: #444444;
-}*/
+}
 
 #burger {
   display: none;
