@@ -197,6 +197,9 @@ a .avatar:hover {
   #tab-titles {
     display: none;
   }
+  .info {
+  background: linear-gradient(to bottom right, rgb(50, 50, 50), red);
+  }
 }
 
 .message-btn {
