@@ -173,9 +173,6 @@ a .avatar:hover {
   #tab-titles {
     display: none;
   }
-  .info {
-  background: linear-gradient(to bottom right, rgb(50, 50, 50), red);
-  }
 }
 @media (max-width: 712px) {
   .tab-content {
@@ -199,6 +196,9 @@ a .avatar:hover {
   }
   #tab-titles {
     display: none;
+  }
+  .info {
+  background: linear-gradient(to bottom right, rgb(50, 50, 50), purple);
   }
 }
 
