@@ -198,8 +198,8 @@ a .avatar:hover {
     display: none;
   }
   .info {
-    min-width: 25%;
-    background: linear-gradient(to bottom right, rgb(50, 50, 50), green);
+    min-width: 200px;
+    background: linear-gradient(to bottom right, rgb(50, 50, 50), red);
   }
 }
 
