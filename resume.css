@@ -134,6 +134,10 @@ a .avatar:hover {
   opacity: 1;
 }
 
+.menus {
+  margin-left: 50px;
+}
+
 @media(max-width: 883px) {
   .info {
     height: 100%;
@@ -186,7 +190,7 @@ a .avatar:hover {
 }
 @media (max-width: 565px) {
   .tab-content {
-    height: 165vh;
+    height: 130vh;
   }
   #burger {
     display: flex;
@@ -199,7 +203,7 @@ a .avatar:hover {
   }
   .info {
     min-width: 200px;
-    background: linear-gradient(to bottom right, rgb(50, 50, 50), red);
+    background: linear-gradient(to bottom right, rgb(50, 50, 50), #315B96);
   }
 }
 
