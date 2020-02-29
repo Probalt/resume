@@ -432,3 +432,7 @@ a .avatar:hover {
   display: none;
 }
 
+.experience a {
+  color: #315B96;
+}
+
